@@ -1,0 +1,60 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.estructuradedatos.listasenlazadas;
+
+
+public class Product {
+    private int ID;
+    private int Existence;
+    private String name;
+    private Double price;
+
+    public Product(int ID, int Existence, String name, Double price) {
+        this.ID = ID;
+        this.Existence = Existence;
+        this.name = name;
+        this.price = price;
+    }
+    public Product(){
+        
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public int getExistence() {
+        return Existence;
+    }
+
+    public void setExistence(int Existence) {
+        this.Existence = Existence;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" + "ID=" + ID + ", Existence=" + Existence + ", name=" + name + ", price=" + price + '}';
+    }
+}
