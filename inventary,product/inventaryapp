@@ -1,0 +1,50 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.estructuradedatos.listasenlazadas;
+import java.util.LinkedList;
+/**
+ *
+ * @author prestamo
+ */
+public class EstructuraDeDatosListasEnlazadas {
+
+    public static void main(String[] args) {
+    Product  p1 = new Product ();
+      p1.setID(01);
+      p1.setName("Cerveza");
+      p1.setPrice((Double).4500);
+      p1.setExistence(300);
+    }
+    Product  p2 = new Product ();{
+      p2.setID(02);
+      p2.setName("Papas");
+      p2.setPrice((Double).2500);
+      p2.setExistence(150);
+    }
+    Product p3 = new Product(03,300,"Gaseosa",300.0);
+    
+    Product p4 = new Product ();{
+      p4.setID(04);
+      p4.setName("Chocolatina");
+      p4.setPrice((Double).5000);
+      p4.setExistence(50);
+      System.out.println(p3);
+    Product p5 = new Product(05,100, "Monster",900.0);
+    
+    
+    System.out.println(p1.getExistence());
+    
+    p1.setPrice(5678.0);
+    System.out.println(p1.toString());
+    
+    System.out.println(p2.getName());
+    System.out.println(p2.getExistence());
+    
+    p2.setPrice((double)3000);
+    System.out.println(p2.toString());
+    
+    LinkedList <Product> Products;
+}
+}
